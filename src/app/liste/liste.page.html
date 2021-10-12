@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Orange Digital Kalason</ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card><ion-title>La liste des apprenants</ion-title></ion-card>
+  <ion-card>
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        <ion-label>{{item.nom}}</ion-label>
+        <ion-label>{{item.prenom}}</ion-label>
+        <ion-label>{{item.status_apprenant}}</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+</ion-content>
