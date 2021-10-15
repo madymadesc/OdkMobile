@@ -2,10 +2,7 @@
       <ion-menu side="start" content-id="main-content">
         <ion-header >
           <ion-toolbar translucent >
-           <ion-button slot="start">
-             <ion-menu-button></ion-menu-button>
-           </ion-button>
-            <ion-title>Menu</ion-title>
+             <ion-menu-button color="primary">Menu</ion-menu-button>
           </ion-toolbar>
         </ion-header>
         <ion-content>
@@ -49,7 +46,8 @@
          <h2 class="black"> Bienvenue {{prenom}} {{nom}}</h2>
          <ion-item>
             <ion-label>Tu t'es connecter à: </ion-label>
-          <ion-datetime [(ngModel)]="myDate" displayFormat="HH:mm"></ion-datetime>
+          <ion-label [(ngModel)]="myDate" >{{myDate | date: 'HH:mm'}}</ion-label>
+          
         </ion-item>
         </ion-content>
         </div>
